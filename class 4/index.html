@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 4</title>
+  </head>
+  <body>
+    <!-- practice of class 4 -->
+    <!-- forms in html  -->
+     <h1>Form in HTML</h1>
+    <form>
+      <fieldset>
+        <legend>User Personal Information</legend>
+        <label for="name">Enter your full Name :</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          minlength="4"
+          maxlength="20"
+          autocomplete="on"
+        />
+        <br />
+        <br />
+        <label for="email"> Enter your email:</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <br />
+        <label for="password"> Enter your password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          minlength="8"
+        />
+
+        <p>Select your gender:</p>
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label><br />
+
+        <input type="radio" id="other" name="gender" />
+        <label for="other">other</label> <br />
+        <br />
+        <label for="dob"> Enter your Date of Birth: </label>
+        <input type="date" id="dob" name="dob" required />
+        <br />
+        <br />
+        <label for="dp">Select your Display Picture: </label>
+        <input type="file" name="dp" id="dp" />
+        <br />
+        <br />
+
+        <button>Submit</button>
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <!-- iframes  -->
+     <H1>Iframes </H1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/salY_Sm6mv4?si=Hdjy38vHWLzpkc9j"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
