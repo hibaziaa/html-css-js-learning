@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 5-CSS</title>
+
+    <!-- practice of 5th class  -->
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        background-color: #f0f0f0;
+        font-family: Verdana, sans-serif;
+      }
+      .internal-style {
+        color: darkgreen;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Inline CSS -->
+      <h1 style="text-align: center; text-transform: uppercase">
+        This is a heading styled with External CSS
+      </h1>
+
+      <p class="internal-style">This paragraph is styled using Internal CSS.</p>
+
+      <p style="color: red; font-weight: bold">
+        This paragraph is styled with Inline CSS.
+      </p>
+    </div>
+  </body>
+</html>
