@@ -1,0 +1,555 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  /* box-sizing: border-box; */
+}
+
+.navBar {
+  background-color: rgba(36, 34, 34, 0.7);
+  backdrop-filter: blur(10px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  width: 100%;
+  position: fixed;
+  z-index: 1000; 
+}
+
+.logo {
+  height: 44px;
+  width: 30px;
+  transition: fill 0.3s ease;
+}
+
+.logo:hover path {
+  transform: translateY(0);
+  fill: white;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.navBar a:hover {
+  transform: translateY(-3px);
+  color: white;
+}
+
+.svg {
+  height: 20px;
+  width: auto;
+  padding-top: 10px;
+}
+
+.navItems {
+  padding-top: 15px;
+}
+
+.ios16ProBanner {
+  background-image: url(iphone16pro.jpg);
+  background-size: cover;
+  height: 625px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ios16Banner {
+  background-image: url(./iphone16.jpg);
+  background-size: cover;
+  height: 625px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.welcomeHeader {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #f5f5f7;
+  padding-top: 90px;
+}
+
+.welcomeHeader h1 {
+  font-size: 3rem;
+  text-align: center; 
+}
+
+.welcomeHeader h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.welcomebutton {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 320px;
+  gap: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  color: #f5f5f7;
+  background-color: #0071e3;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#hoverButton {
+  background-color: transparent;
+  color: #0071e3;
+  border: 2px solid #0071e3;
+}
+
+#hoverButton:hover {
+  color: #f5f5f7;
+  background-color: #0071e3;
+}
+
+p {
+   padding-bottom: 50px;
+  color: #86868b;
+}
+
+.ios16Banner p {
+  color: #1d1d1f;
+}
+
+.iosWatch {
+  background-image: url("./apple_watch.jpg");
+  background-size: cover;
+  height: 625px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.watchLogo {
+  margin-top: 60px;
+}
+
+.watchBtn {
+  margin-top: 10px;
+}
+
+.watchBtn p {
+  text-align: center;
+  font-size: 30px;
+  color: #1d1d1f;
+}
+
+.iconsOuterBox {
+  height: 570px;
+  max-width: calc(100% -40px);
+  box-sizing: border-box;
+  position: relative;
+  margin: 20px 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.iconsInnerBoxLeft,
+.iconsInnerBoxRight {
+  height: 100%;
+  flex: 1;
+  width: calc(50% - 10px);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.airPodsPro2 {
+  background-image: url(./airpods_pro_2.jpg);
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#icon-1TextAlignment {
+  padding-bottom: 38px;
+}
+
+.airPodsPro2 h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.airPodsPro2 p {
+  font-size: 20px;
+  color: #f5f5f7;
+}
+
+.ipadMini {
+  background-image: url("./ipad_mini.jpg");
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+}
+
+.ipadMini h2 {
+  font-size: 35px;
+  font-weight: 600;
+  padding-top: 45px;
+}
+
+.ipadMini p {
+  font-size: 23px;
+  color: #1d1d1f;
+}
+
+.appleIntelligence,
+.ultraWatch,
+.iphoneTradein,
+.appleCard {
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ultraWatch {
+  background-image: url("./apple_watch_ultra2.jpg");
+}
+
+.ultraWatch img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.ultraWatch p {
+  font-size: 23px;
+  color: #f5f5f7;
+}
+
+.iconBtns {
+  margin-top: -25px;
+  font-size: 14px;
+}
+
+.appleIntelligence {
+  background-image: url("./ai.jpg");
+}
+
+.appleIntelligence p {
+  text-align: center;
+  font-size: 23px;
+  color: #1d1d1f;
+}
+
+.iphoneTradein {
+  background-image: url("./iphone_tradein.jpg");
+}
+
+.appleCard {
+  background-image: url("./apple_card.jpg");
+}
+
+.appleCard p,
+.iphoneTradein p {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 10px;
+  color: #1d1d1f;
+}
+
+.iconLogo {
+  margin-top: 50px;
+}
+
+footer {
+  background-color: #f5f5f7;
+  padding: 20px;
+  font-size: 14px;
+  color: #444445;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.preFooter {
+  margin-top: 50px;
+  text-align: start;
+  padding: 0 13%;
+}
+
+.preFooter p {
+  padding: 0;
+  margin-bottom: 10px;
+  color: #86868b;
+}
+
+.preFooter a {
+  text-decoration: underline;
+}
+
+footer a {
+  color: #444445;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+  margin: 20px;
+}
+
+.footer-column h3 {
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #1e1e1e;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #444445;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footerHorizontalRule {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 5%;
+  width: 80%;
+}
+
+.footerMessage {
+  margin: 45px auto 10px;
+  font-size: 14px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.footerMessage a {
+  color: #5698db;
+}
+
+.footerNotes {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.copyRightLinks {
+  padding: 0 8px;
+}
+
+.location {
+  margin-left: 160px;
+  display: inline-block;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .footerMessage,
+  .footerNotes {
+    font-size: 13px;
+    max-width: 85%;
+  }
+
+  .footerHorizontalRule {
+    width: 85%;
+  }
+
+  .location {
+    margin-left: 5px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+  .navItems a:not(:has(svg)) {
+    display: none;
+  }
+
+  .navBar ul {
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .ios16ProBanner {
+    background-image: url(./vertical-ios16pro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .ios16Banner {
+    background-image: url(./vertical-ios16.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .iosWatch {
+    background-image: url(./vertical-watch.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .welcomeHeader h1 {
+    margin-top: -50px;
+  }
+  .airPodsPro2, .ultraWatch , .ipadMini , .appleIntelligence , .appleCard , .iphoneTradein {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .footerMessage,
+  .footerNotes {
+    font-size: 12px;
+    max-width: 90%;
+  }
+
+  .footerHorizontalRule {
+    width: 90%;
+  }
+}
+
+/* Smaller mobile view */
+@media (max-width: 480px) {
+  .navItems a:not(:has(svg)) {
+    display: none;
+  }
+
+  .navBar ul {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .airPodsPro2 h2,
+  .ipadMini h2 {
+    font-size: 21px;
+  }
+
+  .airPodsPro2 p,
+  .ipadMini p,
+  .ultraWatch p,
+  .appleIntelligence p,
+  .iphoneTradein p,
+  .appleCard p {
+    font-size: 13px;
+  }
+  .iconsOuterBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconsInnerBoxLeft,
+  .iconsInnerBoxRight {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .iconLogo {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .airPodsPro2 h2,
+  .ipadMini h2 {
+    font-size: 30px;
+  }
+
+  .airPodsPro2 p,
+  .ipadMini p,
+  .ultraWatch p,
+  .iphoneTradein p,
+  .appleCard p {
+    font-size: 16px;
+  }
+  button {
+    margin: 3px; 
+    padding: 10px 15px; 
+    font-size: 0.9rem;
+  }
+
+  #hoverButton {
+    border-width: 1.5px; 
+  }
+ 
+  footer {
+    padding: 15px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerMessage,
+  .footerNotes {
+    font-size: 11px;
+    max-width: 95%;
+  }
+
+  .footerHorizontalRule {
+    width: 95%;
+  }
+
+  .copyRightLinks,
+  .location {
+    display: block;
+    padding: 5px 0;
+  }
+}
